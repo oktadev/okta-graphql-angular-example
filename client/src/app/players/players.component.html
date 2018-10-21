@@ -1,0 +1,26 @@
+<h1>Players</h1>
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+  <tr>
+    <th class="mdl-data-table__cell--non-numeric">First Name</th>
+    <th class="mdl-data-table__cell--non-numeric">Last Name</th>
+    <th class="mdl-data-table__cell--non-numeric">Hand</th>
+    <th>Birthday</th>
+    <th class="mdl-data-table__cell--non-numeric">Country</th>
+  </tr>
+  <tr *ngFor="let player of players">
+    <td class="mdl-data-table__cell--non-numeric">{{player.first_name}}</td>
+    <td class="mdl-data-table__cell--non-numeric">{{player.last_name}}</td>
+    <td class="mdl-data-table__cell--non-numeric">{{player.hand}}</td>
+    <td>{{player.birthday}}</td>
+    <td class="mdl-data-table__cell--non-numeric">{{player.country}}</td>
+  </tr>
+</table>
+<div class="paging">
+  <button class="mdl-button mdl-js-button mdl-button--colored" (click)="prevPage()">
+    <i class="material-icons">arrow_back</i>
+  </button>
+  Page {{page+1}}
+  <button class="mdl-button mdl-js-button mdl-button--colored" (click)="nextPage()">
+    <i class="material-icons">arrow_forward</i>
+  </button>
+</div>

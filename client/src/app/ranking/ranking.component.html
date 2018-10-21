@@ -1,0 +1,22 @@
+<h1>Rankings</h1>
+<input class="mdl-textfield__input" type="text" id="rank" [(ngModel)]="rank">
+
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" (click)="update()">
+  Update
+</button>
+<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" *ngIf="rankings">
+  <tr>
+    <th>Rank</th>
+    <th>Date</th>
+    <th>Points</th>
+    <th class="mdl-data-table__cell--non-numeric">First Name</th>
+    <th class="mdl-data-table__cell--non-numeric">Last Name</th>
+  </tr>
+  <tr *ngFor="let ranking of rankings">
+    <td>{{ranking.rank}}</td>
+    <td>{{ranking.date}}</td>
+    <td>{{ranking.points}}</td>
+    <td class="mdl-data-table__cell--non-numeric">{{ranking.player.first_name}}</td>
+    <td class="mdl-data-table__cell--non-numeric">{{ranking.player.last_name}}</td>
+  </tr>
+</table>
