@@ -1,0 +1,37 @@
+{
+  "name": "graphql-angular-demo",
+  "version": "1.0.0",
+  "description": "The server for the GraphQL Angular demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "watch": "nodemon --watch 'index.js src/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holgerschmitz/graphql-angular.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "Angular",
+    "Okta",
+    "express",
+    "node"
+  ],
+  "author": "Holger Schmitz",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/holgerschmitz/graphql-angular/issues"
+  },
+  "homepage": "https://github.com/holgerschmitz/graphql-angular#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
