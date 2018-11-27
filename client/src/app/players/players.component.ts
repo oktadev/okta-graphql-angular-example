@@ -21,7 +21,7 @@ const PLAYERS_QUERY = gql`
   styleUrls: ['./players.component.css']
 })
 export class PlayersComponent implements OnInit {
-  page = 1;
+  page = 0;
   players: any[] = [];
 
   private query: QueryRef<any>;
